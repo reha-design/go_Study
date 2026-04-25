@@ -32,3 +32,4 @@ go build <폴더명>/<하위폴더명>/main.go
 
 ### [2026-04-26] Floating Point & Precision
 - **06_float_precision**: `260426/06_float_precision/main.go` - 실수의 표현, 지수 표기법, 정밀도 오차
+- **07_fmt_specifiers**: `260426/07_fmt_specifiers/main.go` - 다양한 출력 서식 문자(%%v, %%d, %%f 등)
