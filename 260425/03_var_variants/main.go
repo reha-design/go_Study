@@ -9,14 +9,15 @@ func main() {
 	var age = 30      // int로 추론
 	var score = 95.5  // float64로 추론
 
-	fmt.Println("1. 타입 추론:", name, age, score)
+	// %v는 값(value), %T는 타입(Type)을 의미합니다.
+	fmt.Printf("1. 타입 추론: %v(%T), %v(%T), %v(%T)\n", name, name, age, age, score, score)
 
 	// 2. 단축 변수 선언 (Short Variable Declaration)
 	// var 키워드와 타입 없이 ':='를 사용하여 선언과 동시에 할당합니다.
 	// ※ 주의: 함수 안에서만 사용 가능합니다.
 	city := "Seoul"
 	population := 1000
-	
+
 	fmt.Println("2. 단축 선언:", city, population)
 
 	// 3. 여러 변수 동시 선언
