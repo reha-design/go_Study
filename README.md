@@ -29,3 +29,6 @@ go build <폴더명>/<하위폴더명>/main.go
 - **03_var_variants**: `260425/03_var_variants/main.go` - 다양한 변수 선언 방식 (타입 추론, 단축 선언 등)
 - **04_constants**: `260425/04_constants/main.go` - 상수(const) 선언 및 iota 활용
 - **05_type_conversion**: `260425/05_type_conversion/main.go` - 명시적 타입 변환 및 strconv 패키지
+
+### [2026-04-26] Floating Point & Precision
+- **06_float_precision**: `260426/06_float_precision/main.go` - 실수의 표현, 지수 표기법, 정밀도 오차
