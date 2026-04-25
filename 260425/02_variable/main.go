@@ -21,6 +21,8 @@ func main() {
 	fmt.Println("키:", height, "cm")
 	fmt.Println("학생 여부:", isStudent)
 
+	fmt.Println("-------------------") // 구분선 추가
+
 	// 변수 값 변경
 
 	age = 21
