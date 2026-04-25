@@ -27,3 +27,4 @@ go build <폴더명>/<하위폴더명>/main.go
 - **01_hello**: `260425/01_hello/main.go` - Go의 기본 구조 이해
 - **02_variable**: `260425/02_variable/main.go` - 변수와 자료형 실습
 - **03_var_variants**: `260425/03_var_variants/main.go` - 다양한 변수 선언 방식 (타입 추론, 단축 선언 등)
+- **04_constants**: `260425/04_constants/main.go` - 상수(const) 선언 및 iota 활용
