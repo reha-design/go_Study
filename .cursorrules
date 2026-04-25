@@ -1,0 +1,13 @@
+# Project Rules for AI Agents
+
+## Commit Message Guidelines
+- 모든 커밋 메시지는 반드시 **한글**로 작성합니다.
+- 형식: "[작업타입] 작업내용 요약" (예: [FEAT] 헬로월드 주석 추가)
+
+## Documentation & Comments
+- 코드 내 주석은 한국어로 상세하게 작성합니다.
+- 새로운 개념이나 라이브러리 사용 시 학습을 돕기 위한 설명을 포함합니다.
+
+## Language Specifics (Go)
+- Go의 표준 스타일 가이드를 준수합니다.
+- 학습용 코드이므로 가독성과 교육적 가치를 우선시합니다.
