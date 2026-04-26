@@ -34,4 +34,35 @@ func main() {
 	var b float64 = 0.2
 	fmt.Printf("   0.1 + 0.2 = %v\n", a+b) 
 	// 결과가 0.3이 아니라 0.30000000000000004가 나옵니다!
+
+	// 5. 오차를 피하는 방법들
+	fmt.Println("\n5. 오차를 피하는 방법들:")
+
+	// 방법 1: 반올림 출력 (출력 단계에서 소수점 자리수를 제한)
+	// - 단순히 보여줄 때만 맞춰주는 방법. 내부 값은 여전히 오차가 있습니다.
+	fmt.Printf("   [방법1] %.1f + %.1f = %.1f  (출력 반올림)\n", a, b, a+b)
+
+	// 방법 2: epsilon(허용 오차) 비교 (math 패키지 없이)
+	// - math.Abs 대신 직접 절댓값을 계산합니다.
+	// - diff < 0 이면 부호를 뒤집어 양수로 만듭니다.
+	const epsilon = 1e-9 // 허용 오차 범위 (10^-9)
+	expected := 0.3
+	diff := (a + b) - expected
+	if diff < 0 {
+		diff = -diff // 직접 절댓값 계산 (math.Abs 없이)
+	}
+	if diff < epsilon {
+		fmt.Println("   [방법2] 0.1 + 0.2 ≈ 0.3  (epsilon 비교: true)")
+	} else {
+		fmt.Println("   [방법2] 0.1 + 0.2 ≠ 0.3  (epsilon 비교: false)")
+	}
+
+	// 방법 3: 정수 변환 후 연산 (가장 확실한 방법, math 패키지 없이)
+	// - 10^n을 곱해 정수로 만든 뒤 계산합니다.
+	// - math.Round 대신 양수에서 0.5를 더한 뒤 int64로 잘라내면 반올림 효과가 납니다.
+	//   int64(1.0 + 0.5) = int64(1.5) = 1  ✓
+	ai := int64(a*10 + 0.5) // 0.1 → int64(1.5) → 1
+	bi := int64(b*10 + 0.5) // 0.2 → int64(2.5) → 2
+	result := float64(ai+bi) / 10 // (1 + 2) / 10 = 0.3
+	fmt.Printf("   [방법3] 0.1 + 0.2 = %v  (정수 변환 후 연산)\n", result)
 }

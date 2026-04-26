@@ -1,6 +1,8 @@
 # Go 언어 기초 학습 및 예제 저장소
 
-Go 언어를 학습하며 작성한 예제 코드와 학습 내용을 정리하는 저장소입니다.
+**Tucker의 Go 언어 프로그래밍** 강의를 바탕으로 실습한 예제 코드와 학습 내용을 정리하는 저장소입니다.
+
+> 📖 **참고 강의**: [Tucker의 Go 언어 프로그래밍](https://www.youtube.com/c/TuckerProgramming) — Tucker(박성재)님이 운영하는 Go 언어 입문 강의 시리즈
 
 ## 🚀 실행 방법
 
@@ -30,6 +32,17 @@ go build <폴더명>/<하위폴더명>/main.go
 - **04_constants**: `260425/04_constants/main.go` - 상수(const) 선언 및 iota 활용
 - **05_type_conversion**: `260425/05_type_conversion/main.go` - 명시적 타입 변환 및 strconv 패키지
 
-### [2026-04-26] Floating Point & Precision
+### [2026-04-26] Floating Point, Precision & Operators
 - **06_float_precision**: `260426/06_float_precision/main.go` - 실수의 표현, 지수 표기법, 정밀도 오차
 - **07_fmt_specifiers**: `260426/07_fmt_specifiers/main.go` - 다양한 출력 서식 문자(%%v, %%d, %%f 등)
+- **08_arithmetic**: `260426/08_arithmetic/main.go` - 산술 연산자 (+, -, *, /, %), 정수/실수 나눗셈, 증감 연산자, 연산자 우선순위
+
+---
+
+## 📚 참고 자료
+
+| 자료 | 링크 |
+|------|------|
+| Tucker의 Go 언어 프로그래밍 (YouTube) | [youtube.com/c/TuckerProgramming](https://www.youtube.com/c/TuckerProgramming) |
+| Tucker의 Go 언어 프로그래밍 (도서) | [교보문고 링크](https://product.kyobobook.co.kr/detail/S000001810497) |
+| Go 공식 문서 | [go.dev/doc](https://go.dev/doc) |
