@@ -10,7 +10,10 @@ func main() {
 	var score = 95.5  // float64로 추론
 
 	// %v는 값(value), %T는 타입(Type)을 의미합니다.
-	fmt.Printf("1. 타입 추론: %v(%T), %v(%T), %v(%T)\n", name, name, age, age, score, score)
+	fmt.Println("1. 타입 추론:", name, age, score)
+	// Printf는 서식(%T 등)을 미리 정해놓고 출력할 때 사용합니다.
+	// 문자열 안의 %T 자리에 뒤에 나열한 변수들이 순서대로 하나씩 대입됩니다.
+	fmt.Printf("   (각 변수의 타입: %T, %T, %T)\n", name, age, score)
 
 	// 2. 단축 변수 선언 (Short Variable Declaration)
 	// var 키워드와 타입 없이 ':='를 사용하여 선언과 동시에 할당합니다.
